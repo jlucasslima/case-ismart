@@ -1,18 +1,39 @@
-# Case Ismart - (Prova Única 2023)
-# Autor - João Lucas de Lima Souza 
+# Case Ismart — Análise da Prova Única
 
-Este projeto consiste em uma análise exploratória de dados (EDA) para o Instituto Ismart, focada em identificar padrões de desempenho acadêmico em diferentes unidades (praças).
+## Objetivo
+Analisar os resultados da Prova Única para identificar padrões de desempenho dos alunos e gerar insights que possam orientar ações pedagógicas.
 
-## Destaques da Análise
-- **Padronização de Dados:** Tratamento de siglas e inconsistências de nomes de praças.
-- **Validação Estatística:** Uso de Correlação de Pearson para validar o ENEM Projetado.
-- **Visualização de Dados:** Mapas de calor (Heatmaps) para identificação de áreas críticas por matéria.
+## Base de dados
+A base contém as notas dos alunos em quatro áreas da prova:
+- Ciências Humanas (CH)
+- Ciências da Natureza (CN)
+- Matemática (MA)
+- Linguagens (LI)
 
-## Tecnologias Utilizadas
-- Python 3
-- Pandas & Seaborn
-- Jupyter Notebook (nbconvert)
+Cada área possui três métricas:
+- NOTA_DESEMPENHO
+- Media_ENEM
+- ENEM_Projetado
 
-## Principais Conclusões
-- **Destaque:** Cotia (CO) apresenta a maior média geral.
-- **Atenção:** SJC e Sorocaba necessitam de reforço em Matemática.
+## Análises realizadas
+
+### Bloco 1
+Construção de uma base consolidada em que cada aluno aparece apenas uma vez, utilizando a métrica ENEM_Projetado para cada área.
+
+### Bloco 2
+- Análise de correlação entre as métricas da prova
+- Comparação da média de ENEM Projetado entre as praças
+- Análise exploratória para identificar áreas críticas de desempenho
+
+## Principais insights
+
+- Forte correlação entre as métricas de avaliação (0.86–0.97)
+- Diferenças de desempenho entre praças
+- São José dos Campos e Rio de Janeiro apresentam menor desempenho em Matemática
+- Cotia apresenta as maiores médias da rede
+
+## Tecnologias utilizadas
+- Python
+- Pandas
+- Seaborn
+- Matplotlib
