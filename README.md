@@ -39,3 +39,8 @@ Foram realizadas as seguintes análises:
 - Pandas
 - Seaborn
 - Matplotlib
+
+## Visualização
+O resultado final da análise, com todos os gráficos e conclusões, pode ser acessado pelo link abaixo:
+
+**https://jlucasslima.github.io/case-ismart/**
