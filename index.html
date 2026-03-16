@@ -7829,7 +7829,7 @@ a.anchor-link {
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1">#Carrega a base de dados</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">"Base_Estag_Dados.xlsx"</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">'Base_Prova_Unica'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">"../data/Base_Estag_Dados.xlsx"</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">'Base_Prova_Unica'</span><span class="p">)</span>
 
 <span class="c1"># Padronizando os nomes das Praças para evitar distorções</span>
 <span class="n">mapeamento_pracas</span> <span class="o">=</span> <span class="p">{</span>
@@ -7855,7 +7855,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Bloco-1:-Estrutura%C3%A7%C3%A3o-da-Base-de-Dados">Bloco 1: Estruturação da Base de Dados<a class="anchor-link" href="#Bloco-1:-Estrutura%C3%A7%C3%A3o-da-Base-de-Dados">¶</a></h2><p>O objetivo é construir uma base analítica onde cada aluno aparece uma única vez.</p>
-<p><strong>Observação:</strong> Devido ao volume de dados (2.553 registros), este exbição apresenta apenas as primeiras linhas. O banco de dados completo e higienizado foi exportado automaticamente e está disponível no ficheiro <strong><code>Resultado_Bloco1_Ismart.xlsx</code></strong> anexo ao repositório no GitHub para visualização completa.</p>
+<p><strong>Observação:</strong> Devido ao volume de dados (2.553 registros), este exbição apresenta apenas as primeiras linhas. O banco de dados completo e higienizado foi exportado automaticamente e está disponível dentro da pasta <strong><code>data</code></strong> no ficheiro <strong><code>Resultado_Bloco1_Ismart.xlsx</code></strong> anexo ao repositório no GitHub para visualização completa.</p>
 </div>
 </div>
 </div>
@@ -7897,7 +7897,7 @@ a.anchor-link {
 <span class="n">df_bloco1_completo</span> <span class="o">=</span> <span class="n">df_bloco1_completo</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s2">"-"</span><span class="p">)</span>
 
 <span class="c1"># 7. Salva o Excel</span>
-<span class="n">df_bloco1_completo</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s2">"Resultado_Bloco_Ismart.xlsx"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">df_bloco1_completo</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s2">"../data/Resultado_Bloco_Ismart.xlsx"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="n">df_bloco1_completo</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
