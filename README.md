@@ -1,38 +1,40 @@
-# Case Ismart — Análise da Prova Única
+# Case Ismart — Análise da Prova Única 2023
+# Autor - João Lucas de Lima Souza
 
 ## Objetivo
-Analisar os resultados da Prova Única para identificar padrões de desempenho dos alunos e gerar insights que possam orientar ações pedagógicas.
+Analisar os resultados do simulado **Prova Única** para identificar padrões de desempenho dos alunos nas diferentes praças da rede Ismart e gerar insights que possam orientar ações pedagógicas.
 
-## Base de dados
-A base contém as notas dos alunos em quatro áreas da prova:
-- Ciências Humanas (CH)
-- Ciências da Natureza (CN)
-- Matemática (MA)
-- Linguagens (LI)
+## Estrutura da Análise
 
-Cada área possui três métricas:
-- NOTA_DESEMPENHO
-- Media_ENEM
-- ENEM_Projetado
+O projeto foi dividido em duas etapas:
 
-## Análises realizadas
+### Bloco 1 — Preparação dos Dados
+A base original possuía múltiplas linhas por aluno (uma para cada área da prova).  
+Foi construída uma base consolidada onde cada aluno aparece em **uma única linha**, utilizando a métrica **ENEM_Projetado** para cada área.
 
-### Bloco 1
-Construção de uma base consolidada em que cada aluno aparece apenas uma vez, utilizando a métrica ENEM_Projetado para cada área.
+### Bloco 2 — Análise Exploratória
+Foram realizadas as seguintes análises:
 
-### Bloco 2
-- Análise de correlação entre as métricas da prova
-- Comparação da média de ENEM Projetado entre as praças
-- Análise exploratória para identificar áreas críticas de desempenho
+- Matriz de correlação entre `NOTA_DESEMPENHO`, `Media_ENEM` e `ENEM_Projetado`
+- Comparação da média do ENEM Projetado entre as praças
+- Heatmap de desempenho por **praça × área do conhecimento**
 
-## Principais insights
+## Principais Insights
 
-- Forte correlação entre as métricas de avaliação (0.86–0.97)
-- Diferenças de desempenho entre praças
-- São José dos Campos e Rio de Janeiro apresentam menor desempenho em Matemática
-- Cotia apresenta as maiores médias da rede
+1. **Correlação entre métricas**  
+   Existe forte correlação positiva entre as três métricas de avaliação (0.86–0.97).
 
-## Tecnologias utilizadas
+2. **Desempenho em Matemática**  
+   As praças de **São José dos Campos (SJC)** e **Rio de Janeiro (RJ)** apresentam as menores médias em Matemática.
+
+   *Ação sugerida:* reforço acadêmico focado em disciplinas de exatas nessas unidades.
+
+3. **Destaque de desempenho**  
+   **Cotia (CO)** apresenta as maiores médias da rede em diversas áreas.
+
+   *Ação sugerida:* investigar práticas pedagógicas aplicadas na unidade para possível replicação.
+
+## Tecnologias
 - Python
 - Pandas
 - Seaborn
